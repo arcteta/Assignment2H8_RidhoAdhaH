@@ -14,13 +14,22 @@ getForm.addEventListener("submit", (e) => {
     let inputEmail = document.getElementById("input-email").value;
 
 
-   document.getElementById("profile-name").innerHTML = inputNama
-   document.getElementById("profile-role").innerHTML = inputRole
-   document.getElementById("profile-available").innerHTML = inputAvailability
-   document.getElementById("profile-usia").innerHTML = inputUsia
-   document.getElementById("profile-lokasi").innerHTML = inputLokasi
-   document.getElementById("profile-years").innerHTML = inputYears
-   document.getElementById("profile-email").innerHTML = inputEmail
+    document.getElementById("profile-name").innerHTML = inputNama == "" ? document.getElementById("profile-name").innerHTML : inputNama
+    document.getElementById("profile-role").innerHTML = inputRole == "" ? document.getElementById("profile-role").innerHTML : inputRole
+    document.getElementById("profile-available").innerHTML = inputAvailability == "" ? document.getElementById("profile-available").innerHTML : inputAvailability
+    document.getElementById("profile-usia").innerHTML = inputUsia == "" ? document.getElementById("profile-usia").innerHTML : inputUsia
+    document.getElementById("profile-lokasi").innerHTML = inputLokasi == "" ? document.getElementById("profile-lokasi").innerHTML : inputLokasi
+    document.getElementById("profile-years").innerHTML = inputYears == "" ? document.getElementById("profile-years").innerHTML : inputYears
+    document.getElementById("profile-email").innerHTML = inputEmail == "" ? document.getElementById("profile-email").innerHTML : inputEmail
 
+    document.getElementById("form-body").style.display = "none"
+
+    document.getElementById("button-dinamis").innerHTML = "edit"
 });
+
+
+document.getElementById("button-dinamis").addEventListener("click", (e) => {
+    document.getElementById("form-body").style.display = "block"
+})
+
 
