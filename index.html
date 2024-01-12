@@ -38,8 +38,8 @@
                 </div>
             </div>
             <div class="col mt-5">
-                <p class="h5">RIDHO ADHA HARDIYANTO</p>
-                <p class="h6 fw-light">SOFTWARE ENGINEER</p>
+                <p id="profile-name" class="h5">RIDHO ADHA HARDIYANTO</p>
+                <p id="profile-role" class="h6 fw-light">SOFTWARE ENGINEER</p>
                 <div class="d-flex column-gap-3">
                     <button class="btn btn-primary">Kontak</button>
                     <button class="btn btn-outline-success">Resume</button>
@@ -53,11 +53,11 @@
                 <p class="h5">Email</p>
             </div>
             <div class="col mt-4">
-                <p class="h5 fw-light">Available</p>
-                <p class="h5 fw-light">24 tahun</p>
-                <p class="h5 fw-light">Tangerang Selatan</p>
-                <p class="h5 fw-light">2</p>
-                <p class="h5 fw-light">dho@bithealth.co.id</p>
+                <p id="profile-available" class="h5 fw-light">Available</p>
+                <p id="profile-usia" class="h5 fw-light">24 tahun</p>
+                <p id="profile-lokasi" class="h5 fw-light">Tangerang Selatan</p>
+                <p id="profile-years" class="h5 fw-light">2</p>
+                <p id="profile-email" class="h5 fw-light">dho@bithealth.co.id</p>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
 
     <!-- form -->
     <div class="container shadow mb-5">
-        <form action="">
+        <form id="input-form">
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
                 <input id="input-nama" type="text" class="form-control">
@@ -80,7 +80,7 @@
             </div>
             <div class="mb-3">
                 <label for="Usia" class="form-label">Usia</label>
-                <input id="input-usia" type="number" class="form-control">
+                <input id="input-usia" type="text" class="form-control">
             </div>
             <div class="mb-3">
                 <label for="lokasi" class="form-label">Lokasi</label>
@@ -88,16 +88,16 @@
             </div>
             <div class="mb-3">
                 <label for="years" class="form-label">Years Of Experience</label>
-                <input id="input-years" type="number" class="form-control">
+                <input id="input-years" type="text" class="form-control">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">email</label>
                 <input id="input-email" type="email" class="form-control">
             </div>
+            <div class="d-grid pb-3">
+                <button type="submit" id="button-submit" class="btn btn-success"> Submit </button>
+            </div>
         </form>
-        <div class="d-grid pb-3">
-            <button class="btn btn-success"> Submit </button>
-        </div>
     </div>
 
 
